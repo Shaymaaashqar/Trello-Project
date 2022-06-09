@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 70%;
+  min-width: 80%;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 0;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //padding-top: 20px;
+  // padding-bottom: 20px;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 5%;
+    display: flex;
+
+    a {
+      margin: 10px;
+      color: inherit;
+      text-decoration: none;
+      font-size: 18px;
+      gap: 0rem;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      display: flex;
+      flex-direction: row;
+    }
+    a:hover {
+      color: rgb(90, 182, 205);
+    }
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 30px;
+    }
+  }
+
+  .login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    .buttonField1 {
+      color: rgb(45, 41, 41);
+      background-color: white;
+      border: none;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: larger;
+    }
+    .buttonField2 {
+      color: white;
+      border: none;
+      background-color: rgb(43, 43, 241);
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: larger;
+    }
+    .buttonField2:hover {
+      background-color: rgb(67, 67, 185);
+    }
+  }
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30%;
+  .signupfont {
+    padding: 5% 10% 3% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+  }
+  .account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 10% 3% 20%;
+    .buttonSignup {
+      color: white;
+      border: none;
+      background-color: rgb(43, 43, 241);
+      font-size: medium;
+      width: 200px;
+      height: 40px;
+      margin-bottom: 15px;
+    }
+    .buttonSignup:hover {
+      background-color: rgb(67, 67, 185);
+    }
+    a {
+      color: rgb(110, 101, 101);
+    }
+    a:hover {
+      color: rgb(44, 37, 37);
+    }
+  }
+}
