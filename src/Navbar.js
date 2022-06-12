@@ -1,7 +1,10 @@
 import { HiChevronDown } from "react-icons/hi";
 import { IconContext } from "react-icons";
-import Signup from "./Signup";
+import { useNavigate } from "react-router-dom";
+
 export default function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <nav className="navbar">
@@ -42,19 +45,16 @@ export default function Navbar() {
         <div className="login">
           <input
             className="buttonField1"
-            type="submit"
+            type="button"
             id="login"
             value="Log in"
+            onClick={() => {
+              navigate("../login");
+            }}
           />
-          <input
-            className="buttonField2"
-            type="submit"
-            id="free"
-            value="Get Trello For Free"
-          />
+          <input className="buttonField2" type="button" id="free" value="Get Trello For Free" />
         </div>
       </nav>
-      <Signup />
     </div>
   );
 }

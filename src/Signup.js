@@ -6,7 +6,7 @@ export default function Signup() {
 
   const navigateToSign = () => {
     // 👇️ navigate to /SIGN
-    navigate("/Sign");
+    navigate("/");
   };
 
   return (
